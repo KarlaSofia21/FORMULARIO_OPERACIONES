@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES</title>
+    
+</head>
+<body>
+    <h1>Formulario de operaciones</h1>
+    <form action="./calculo.php" method="post">
+        <label for="valor1">Capture el valor 1 : </label><br>
+        <input type="number" id="valor1" name="valor1" required
+        placeholder="Ingresa un valor"  title="Ingrese un numero"><br>
+
+        <label for="valor2">Capture el valor dos: </label><br>
+        <input type="number" id="valor2"  name="valor2" placeholder="Ingresa un valor"
+         required title="Ingresa un numero"><br>
+
+         <label for="operacion">Seleccione la operación:</label>
+         <select id="operacion" name="operacion" required>
+             <option value="suma">Suma</option>
+             <option value="resta">Resta</option>
+             <option value="multiplicacion">Multiplicación</option>
+             <option value="division">División</option>
+         </select><br><br>
+         
+         <input type="submit" value="Calcular">
+    </form>  
+</body>
+</html>
